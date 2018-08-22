@@ -19,7 +19,7 @@ console.log(`[M] ${client.users.size}`)
 });
 
 
-const prefix = "+"
+const prefix = "F"
 client.on('message', async msg => { // eslint-disable-line
 	if (msg.author.bot) return undefined;
 	if (!msg.content.startsWith(prefix)) return undefined;
@@ -212,7 +212,7 @@ function play(guild, song) {
 
 
 
-const adminprefix = "+";
+const adminprefix = "F";
 const devs = ['472052319006228509'];
 client.on('message', message => {
   var argresult = message.content.split(` `).slice(1).join(' ');
